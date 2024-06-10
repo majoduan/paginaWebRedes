@@ -1,0 +1,123 @@
+<!DOCTYPE html> <!--tipo de documento-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Normalizre Css .- 
+            hace que el estilo de letra sea el mismo en cualquier navegador -->
+    <link rel="stylesheet" href="https://csstools.github.io/normalize.css/11.0.0/normalize.css">
+    <!-- Estilos Personalizados .- coneccion a libreria .css-->
+    <link rel="stylesheet" href="/Styles/styles.css">
+    <!-- JAM icons -->
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto - Grupo 5</title>
+</head>
+
+<body>
+    <!-- PARA COMENTAR Ctrl +shitf+7 -->
+
+    <!-- CABECERA -->
+    <header class="main-header">
+        <!-- Hace que el logo se mantenga siempre en la esquina el class = "main-header" -->
+        <div class="content-wrapper">
+            <!-- Divido en dos hijos, que es el Logo y el MENU...
+
+             para ingresar el logo escribo a y tabulador y continuo
+            ..........
+            href me pide el hipervinculo, es decir a donde nos lleva si presionamos en el, 
+            "/" = nos lleva al inicio 
+            -->
+
+            <!--LOGO-->
+            <a href="/">
+                <img class="mi-imagen" src="/images/EPN_logo_big.jpg" alt="Logo EPN">
+                <!--src es la fuente de donde lo voy a traer
+                "Logo Edsoft" se refiere a un texto alternativo con
+                 el cual nos vamos a referia a la imagen-->
+            </a>
+
+            <!--MENU DE NAVEGACION-->
+            <!-- linea 46 llamo al menu, 46 la identifico con id = ... y en la otra cierro -->
+            <span id="open-menu-button" class="jam jam-menu"></span>
+            <nav id="main-menu" class="main-menu">
+                <span id="close-menu-button" class="jam jam-close"></span>
+                <!--inreso una lista de elementos no orndenada-->
+                <ul>
+                    <!-- esta lista va tener  4 elementos (Incio, Quines somos...)
+
+                    Creo un elementos-->
+                    <li>
+                        <a href="/">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="/quienesSomos.html">¿Quiénes somos?</a>
+                    </li>
+                    <li>
+                        <a href="/contenido.html">Contenido</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="about-project section-container">
+            <h1 class="title" style="margin-bottom: 4rem;">¿Qué es la Canalización en <br> Cableado Estructurado?</h1>
+            
+            <div class="content-wrapper">
+                <div>
+                    <img class="imagen" style="width: 40%; height: 10%;" src="/CableadoEstructurado/ImgContenido3(Canalizacion).jpg"
+                        alt="img.pr1">
+                    <p>
+                        En el contexto del cableado estructurado, las canalizaciones son los conductos o tuberías que se utilizan para alojar y proteger los cables de telecomunicaciones. Estos conductos pueden ser de diferentes materiales, como PVC, acero galvanizado o fibra de vidrio, y se utilizan para llevar los cables de voz, datos y video desde un punto de entrada en el edificio hasta los puntos de terminación en las diferentes salas o áreas.
+
+                        La canalización en el cableado estructurado es esencial para garantizar la calidad, la seguridad y la confiabilidad de las redes de telecomunicaciones. Al proteger los cables de daños mecánicos y ambientales, las canalizaciones ayudan a prolongar la vida útil de los cables y a minimizar la necesidad de reparaciones o reemplazos. Además, al organizar los cables en una estructura ordenada, las canalizaciones facilitan la identificación y el mantenimiento de los cables.<br>
+                        <br>
+                    </p>
+    
+                    <h2>Tipos de Canalizaciones</h2>
+
+                    <p style="margin-left: 3rem;">
+                     
+                    Canalizaciones de PVC: Son las más comunes y económicas, se utilizan para aplicaciones interiores y están disponibles en una variedad de tamaños. Son resistentes a la corrosión y a la intemperie, lo que las hace ideales para usar en edificios y estructuras.
+                    </p>
+
+
+                    <p style="margin-left: 3rem;">
+                        <br>	Canalizaciones de acero galvanizado: Son más resistentes y duraderas que las canalizaciones de PVC, pero también son más pesadas y costosas. Son ideales para aplicaciones exteriores y subterráneas.
+                    </p>
+
+
+                    <p style="margin-left: 3rem;">
+                        <br>	Canalizaciones de fibra de vidrio: Son muy resistentes a la corrosión y a la intemperie, pero son más caras que las canalizaciones de PVC y acero galvanizado. Son ideales para aplicaciones de alta seguridad y en ambientes con altas temperaturas.   
+                    </p>
+
+
+                    <p style="margin-left: 3rem;">
+                        <br>	Canalizaciones de canaletas: son una opción para llevar varios tipos de cables como el eléctrico, de telecomunicaciones, de seguridad, entre otros. son colocadas en las paredes o techos, son fáciles de instalar y mantener.  
+                    </p>
+
+
+                    <p style="margin-left: 3rem;">
+                        <br>	Canalizaciones de bandejas: son una opción para llevar varios tipos de cables como el eléctrico, de telecomunicaciones, de seguridad, entre otros. Son colocadas en las paredes o techos, son fáciles de instalar y mantener.
+                    </p>
+            </div>
+        </div>
+        </section>
+   </main>
+    <!-- PIE DE PAGINA  -->
+    <footer class="main-footer">
+        <!-- poara obtener © se usa Alt + 0169 -->
+        <p>Todos los derechos reservados © 2022 | MonkSaid Students</p>
+    </footer>
+
+    <script src="scripts/menu.js"></script>
+</body>
+
+</html>

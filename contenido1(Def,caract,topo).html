@@ -1,0 +1,225 @@
+<!DOCTYPE html> <!--tipo de documento-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Normalizre Css .- 
+            hace que el estilo de letra sea el mismo en cualquier navegador -->
+    <link rel="stylesheet" href="https://csstools.github.io/normalize.css/11.0.0/normalize.css">
+    <!-- Estilos Personalizados .- coneccion a libreria .css-->
+    <link rel="stylesheet" href="/Styles/styles.css">
+    <!-- JAM icons -->
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto - Grupo 5</title>
+</head>
+
+<body>
+    <!-- PARA COMENTAR Ctrl +shitf+7 -->
+
+    <!-- CABECERA -->
+    <header class="main-header">
+        <!-- Hace que el logo se mantenga siempre en la esquina el class = "main-header" -->
+        <div class="content-wrapper">
+            <!-- Divido en dos hijos, que es el Logo y el MENU...
+
+             para ingresar el logo escribo a y tabulador y continuo
+            ..........
+            href me pide el hipervinculo, es decir a donde nos lleva si presionamos en el, 
+            "/" = nos lleva al inicio 
+            -->
+
+            <!--LOGO-->
+            <a href="/">
+                <img class="mi-imagen" src="/images/EPN_logo_big.jpg" alt="Logo EPN">
+                <!--src es la fuente de donde lo voy a traer
+                "Logo Edsoft" se refiere a un texto alternativo con
+                 el cual nos vamos a referia a la imagen-->
+            </a>
+
+            <!--MENU DE NAVEGACION-->
+            <!-- linea 46 llamo al menu, 46 la identifico con id = ... y en la otra cierro -->
+            <span id="open-menu-button" class="jam jam-menu"></span>
+            <nav id="main-menu" class="main-menu">
+                <span id="close-menu-button" class="jam jam-close"></span>
+                <!--inreso una lista de elementos no orndenada-->
+                <ul>
+                    <!-- esta lista va tener  4 elementos (Incio, Quines somos...)
+
+                    Creo un elementos-->
+                    <li>
+                        <a href="/">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="/quienesSomos.html">¿Quiénes somos?</a>
+                    </li>
+                    <li>
+                        <a href="/contenido.html">Contenido</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<main>
+
+    <section class="about-project section-container">
+        <h1 class="title">¿Qué es el cableado <br> estructurado? </h1>
+        <div class="content-wrapper">
+            <div>
+                <img class="imagen" src="/CableadoEstructurado/imgContenido1.jpg" alt="img.pr1">
+
+                <p>El cableado estructurado es un
+                    sistema que organiza y distribuye cables para
+                    redes de comunicaciones y sistemas eléctricos.
+                    Utiliza un esquema estandarizado para facilitar
+                    la administración y mantenimiento, y mejorar la
+                    capacidad de expansión y escalabilidad. Elementos
+                    como patch paneles, conectores, canales y racks
+                    se utilizan para organizar los cables y
+                    garantizar su protección. Entre los diferentes
+                    tipos de cables estructurados, cada uno tiene
+                    sus propias características y beneficios, así
+                    como su adecuada topografía de instalación.
+                    Por ejemplo, los cables de fibra óptica son
+                    ideales para redes de alta velocidad y largas 
+                    distancias debido a su alta fiabilidad y velocidad de
+                    transmisión. Sin embargo, son más costosos y requieren 
+                    una instalación especializada. Por otro lado,
+                    los cables de cobre tienen un costo más bajo y son más
+                     flexibles, pero tienen una velocidad de
+                    transmisión limitada. Es importante tener en cuenta estas
+                     características al elegir el tipo de cable
+                    estructurado adecuado para una red específica. Además, es
+                     esencial utilizar patch paneles,
+                    conectores, canales y racks para organizar y proteger los
+                     cables de manera eficiente, ya que es una
+                    parte integral del sistema de cableado estructurado.</p>
+
+                </p>
+
+                <table clas border="1">
+                    <tr>
+                        <th>Tipo de cable</th>
+                        <th>Beneficio</th>
+                        <th>Fiabilidad</th>
+                        <th>Velocidad</th>
+                        <th>Flexibilidad</th>
+                        <th>Costo</th>
+                        <th>Característica más relevante</th>
+                        <th>Instalación</th>
+                    </tr>
+                    <tr>
+                        <td>Fibra óptica</td>
+                        <td>Alto</td>
+                        <td>Alta</td>
+                        <td>Alta</td>
+                        <td>Bajo</td>
+                        <td>Alto</td>
+                        <td>Velocidad y fiabilidad</td>
+                        <td>Difícil</td>
+                    </tr>
+                    <tr>
+                        <td>Cobre UTP/STP</td>
+                        <td>Medio a Alto</td>
+                        <td>Alta</td>
+                        <td>Media a Alta</td>
+                        <td>Alta</td>
+                        <td>Bajo a Medio</td>
+                        <td>Buena relación costo-beneficio</td>
+                        <td>Fácil</td>
+                    </tr>
+                    <tr>
+                        <td>Coaxial</td>
+                        <td>Medio</td>
+                        <td>Alta</td>
+                        <td>Alta</td>
+                        <td>Bajo</td>
+                        <td>Medio a alto</td>
+                        <td>Excelente resistencia a interferencias electromagnéticas</td>
+                        <td>Medio</td>
+                    </tr>
+                    <tr>
+                        <td>Par trenzado</td>
+                        <td>Bajo a medio</td>
+                        <td>Baja a media</td>
+                        <td>Baja a media</td>
+                        <td>Alta</td>
+                        <td>Bajo</td>
+                        <td>Fácil de instalar y flexible</td>
+                        <td>Fácil</td>
+                    </tr>
+                </table>
+
+                <div class="content-wrapper">
+
+                    <article class="about-items2">
+
+
+                        <div>
+                            <h2><br></h2>
+                            <p>La topografía de los cables estructurados es un
+                                aspecto importante a considerar al planificar y
+                                diseñar una red. Existen varios tipos de
+                                topografías como estrella, anillo, malla y
+                                jerárquica. Cada una tiene sus propias ventajas
+                                y desventajas, y se debe elegir la que mejor se
+                                adapte a las necesidades de la red. La topografía
+                                en estrella, por ejemplo, es fácil de administrar
+                                y ofrece una alta disponibilidad, pero es más
+                                costosa y requiere más equipos. La topografía
+                                en anillo, por otro lado, es más económica y
+                                tiene una alta resistencia a fallas, pero es
+                                menos escalable. Es importante elegir una
+                                topografía que maximice la disponibilidad y
+                                escalabilidad de la red mientras se minimizan
+                                los costos. Además, es importante tener en
+                                cuenta la capacidad de expansión futura al
+                                elegir una topografía para los cables
+                                estructurados..
+                            </p>
+                        </div>
+                    </article>
+                    <!--                
+                        <article class="about-item2">
+                            <div class="image-container">
+                                <img src="/images/about-1.jpg" alt="ImagenQuinesSomos1">
+                            </div>
+                            <div>
+                                <h2>Sobre nosotros</h2>
+                                <p>Somos un equipo de estudiantes de la Escuela
+                                    Politécnica Nacional, actualmente en nuestro
+                                    cuarto semestre de la carrera de ingeniería
+                                    en software. Nuestro interés en la programación
+                                    y la tecnología nos llevó a crear Project-One, una
+                                    página web que proporciona información sobre los diferentes
+                                    lenguajes de programación y ayuda a los usuarios a elegir el
+                                    adecuado para sus necesidades. Estamos comprometidos a
+                                    proporcionar información precisa y útil y esperamos
+                                    poder ser un recurso valioso para aquellos que quieren
+                                    aprender a programar por primera vez o mejorar sus
+                                    habilidades existentes.
+                                </p>
+                            </div>
+    
+                        </article> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- PIE DE PAGINA  -->
+<footer class="main-footer">
+    <!-- poara obtener © se usa Alt + 0169 -->
+    <p>Todos los derechos reservados © 2022 | MonkSaid Students</p>
+</footer>
+
+<script src="scripts/menu.js"></script>
+</body>
+
+</html>

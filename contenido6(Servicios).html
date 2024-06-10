@@ -1,0 +1,130 @@
+<!DOCTYPE html> <!--tipo de documento-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Normalizre Css .- 
+            hace que el estilo de letra sea el mismo en cualquier navegador -->
+    <link rel="stylesheet" href="https://csstools.github.io/normalize.css/11.0.0/normalize.css">
+    <!-- Estilos Personalizados .- coneccion a libreria .css-->
+    <link rel="stylesheet" href="/Styles/styles.css">
+    <!-- JAM icons -->
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto - Grupo 5</title>
+</head>
+
+<body>
+    <!-- PARA COMENTAR Ctrl +shitf+7 -->
+
+    <!-- CABECERA -->
+    <header class="main-header">
+        <!-- Hace que el logo se mantenga siempre en la esquina el class = "main-header" -->
+        <div class="content-wrapper">
+            <!-- Divido en dos hijos, que es el Logo y el MENU...
+             para ingresar el logo escribo a y tabulador y continuo
+            ..........
+            href me pide el hipervinculo, es decir a donde nos lleva si presionamos en el, 
+            "/" = nos lleva al inicio 
+            -->
+
+            <!--LOGO-->
+            <a href="/">
+                <img class="mi-imagen" src="/images/EPN_logo_big.jpg" alt="Logo EPN">
+                <!--src es la fuente de donde lo voy a traer
+                "Logo Edsoft" se refiere a un texto alternativo con
+                 el cual nos vamos a referia a la imagen-->
+            </a>
+
+            <!--MENU DE NAVEGACION-->
+            <!-- linea 46 llamo al menu, 46 la identifico con id = ... y en la otra cierro -->
+            <span id="open-menu-button" class="jam jam-menu"></span>
+            <nav id="main-menu" class="main-menu">
+                <span id="close-menu-button" class="jam jam-close"></span>
+                <!--inreso una lista de elementos no orndenada-->
+                <ul>
+                    <!-- esta lista va tener  4 elementos (Incio, Quines somos...)
+                    Creo un elementos-->
+                    <li>
+                        <a href="/">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="/quienesSomos.html">¿Quiénes somos?</a>
+                    </li>
+                    <li>
+                        <a href="/contenido.html">Contenido</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about-project section-container">
+        <h1 class="title" style="margin-bottom: 4rem;">Servicios convergentes(VoIP), CCTV  </h1>
+        
+        <div class="content-wrapper">
+            <div>
+                <h2>VoIP</h2>
+                <img class="imagen" style="width: 50%; height: 20%;" src="/CableadoEstructurado/imgContenido6(Voip).jpg.png"
+                    alt="img.pr1">
+                <p>
+                    VoIP funciona, en el lado transmisor se convierte la señal analógica de la voz en una señal discreta, posterior a esto se la codifica y por último se la almacena dentro de paquetes IP. Entonces es transportada a través de la red de datos y en la recepción se realiza el proceso inverso. Más específicamente el proceso inicia en el extremo emisor con la señal analógica del teléfono que es digitalizada en muestras PCM por medio del codificador/decodificador de voz (codec). Estas muestras PCM ingresan al algoritmo de compresión, el cual comprime y la fracciona estas muestras dentro de paquetes IP para ser transmitidos a través de la red. En el extremo receptor se realizan exactamente las mismas funciones en un orden inverso.
+                    Dentro de la estructura básica de una red VoIP hay que diferenciar tres elementos fundamentales:
+                    <br>
+                    <ol>
+                        <li><b>Terminales:</b> Son los dispositivos que utilizarán los usuarios para comunicarse.
+                            Implementados tanto en hardware como en software realizan las funciones de los
+                            teléfonos tradicionales.
+                        </li>
+                        <li><b>Gateways:</b> De forma transparente se encargan de conectar las redes VoIP con las
+                            redes de telefonía tradicional.
+                        </li>
+                        <li><b>Gatekeepers:</b> Son el centro neurálgico de las redes VoIP. Se encargan de realizar
+                            tareas de autenticación de usuarios, control de admisión, control de ancho de banda,
+                            encaminamiento, servicios de facturación y temporización, etc.
+                        </li>
+                        
+                    </ol>
+                    <br>
+                </p>
+
+                <h2>CCTV</h2>
+                <img class="imagen" style="width: 50%; height: 20%;" src="/CableadoEstructurado/imgContenido6(CTV).jpg"
+                alt="img.pr1">
+                <p>
+                    Desde el punto de vista técnico, el esquema de un CCTV se compone de ópticas, cámaras, sistemas de transmisión, conmutadores, equipos de grabación y monitores de vídeo.
+                    La función de las ópticas y las cámaras es la de captación y transformación de la imagen. Las ópticas, serían las lentes encargadas de enfocar al elemento sensor de la cámara, la luz reflejada por los elementos de la escena a visualizar. Las cámaras por su parte son el elemento técnico que tiene como función convertir la señal luminosa reflejada por las ópticas, en la señal de vídeo necesaria para que pueda ser transmitida a distancia. 
+                    La señal es enviada a través del sistema de transmisión, que está constituido por los enlaces (como la fibra óptica). Los enlaces permiten el transporte de la señal de vídeo generada en las cámaras, hacia los conmutadores.
+                    Los sistemas de conmutación reciben y descodifican la señal. Esto permite la visualización de una gran cantidad de cámaras, en un número reducido de monitores, por ejemplo. 
+                    
+                    Los monitores son el elemento receptor y terminal de la señal de vídeo procesada. 
+                    
+                    Por último, están los equipos de grabación. Conectados entre los conmutadores y los monitores, permiten el almacenaje de las imágenes captadas para su posterior reproducción. 
+                    
+                    
+                </p>
+               
+
+         
+                
+         
+
+            </div>
+        </div>
+    </section>
+    </main>
+    <!-- PIE DE PAGINA  -->
+    <footer class="main-footer">
+        <!-- poara obtener © se usa Alt + 0169 -->
+        <p>Todos los derechos reservados © 2022 | MonkSaid Students</p>
+    </footer>
+
+    <script src="scripts/menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html> <!--tipo de documento-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Normalizre Css .- 
+        hace que el estilo de letra sea el mismo en cualquier navegador -->
+    <link rel="stylesheet" href="https://csstools.github.io/normalize.css/11.0.0/normalize.css">
+    <!-- Estilos Personalizados .- coneccion a libreria .css-->
+    <link rel="stylesheet" href="/Styles/styles.css">
+    <!-- JAM icons -->
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto - Grupo 5</title>
+</head>
+
+<body>
+    <!-- PARA COMENTAR Ctrl +shitf+7 -->
+
+    <!-- CABECERA -->
+    <header class="main-header">
+        <!-- Hace que el logo se mantenga siempre en la esquina el class = "main-header" -->
+        <div class="content-wrapper">
+            <!-- Divido en dos hijos, que es el Logo y el MENU...
+
+             para ingresar el logo escribo a y tabulador y continuo
+            ..........
+            href me pide el hipervinculo, es decir a donde nos lleva si presionamos en el, 
+            "/" = nos lleva al inicio 
+            -->
+            <!--LOGO-->
+            <a href="/">
+                <img class="mi-imagen" src="/images/EPN_logo_big.jpg" alt="Logo EPN">
+                <!--src es la fuente de donde lo voy a traer
+                "Logo Edsoft" se refiere a un texto alternativo con
+                 el cual nos vamos a referia a la imagen-->
+            </a>
+
+            <!--MENU DE NAVEGACION-->
+            <!-- linea 46 llamo al menu, 46 la identifico con id = ... y en la otra cierro -->
+            <span id="open-menu-button" class="jam jam-menu"></span>
+            <nav id="main-menu" class="main-menu">
+                <span id="close-menu-button" class="jam jam-close"></span>
+                <!--inreso una lista de elementos no orndenada-->
+                <ul>
+                    <!-- esta lista va tener  4 elementos (Incio, Quines somos...)
+                    Creo un elementos-->
+                    <li>
+                        <a href="/">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="/quienes-somos.html">¿Quiénes somos?</a>
+                    </li>
+                    <li>
+                        <a href="/contenido.html">Contenido</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="about-project section-container">
+            <h1 class="title">¿Quiénes somos?</h1>
+
+        <div class="content-wrapper">
+            
+                    
+                    <p style="text-align: justify; margin-top: 0rem;">Somos un grupo de estudiantes
+                        universitarios que hemos creado una página web con el
+                        objetivo de dotar a los usuarios una herramienta que
+                        facilite y agilice el aprendizaje y comprensión sobre
+                        el tema del cableado estructurado. Nuestra página
+                        proporciona información precisa y actualizada sobre
+                        el significado, funcionamiento, utilidades, beneficios,
+                        tipos y formas en las que se puede realizar el cableado
+                        estructurado. Esta información está diseñada para ayudar
+                        a los profesionales de la tecnología de la información,
+                        así como a cualquier persona interesada en aprender más
+                        sobre este tema específico. Además, nuestra página está
+                        diseñada para llegar a la mayor cantidad de personas
+                        posibles, especialmente estudiantes de ingeniería en
+                        sistemas o telecomunicaciones, ya que estudiarán este
+                        tema en su carrera, y también a personas interesadas
+                        en aprender más sobre cableado estructurado. El primer
+                        punto de visualización y aprobación será la Escuela
+                        Politécnica Nacional. Esperamos que encuentre esta
+                        página útil y informativa.
+
+                    </p>
+                
+
+                <h2 style="text-align: left;">Integrantes</h2>
+
+                <div class="content-wrapper">
+
+                    <!--ESTUDIANTE-->
+
+                    <div >
+                        <img class="imagen" style="width: auto; height: auto; float: left; margin-left: 5rem;" 
+                        src="/CableadoEstructurado/DarioRodriguez.jpg" alt="ImagenQuinesSomos1">
+                        <div style="margin-left: 18rem">
+                            <h3> Lenin Dario Rodriguez Benavides<br></h3>
+                            <p>
+    
+                                <b>Fecha de nacimiento:</b> 02 de Abril del 2000.<br>
+                                <b>Libro favorito:</b> "La cuidad y los perros". <br>
+                                <b>Autor:</b> Mario Vargas Llosa. <br>
+                                <b>Skills:</b> Adaptabilidad, Programador. <br>
+                                <b>Deporte favorito:</b> Básquetbol. <br>
+                                <b>Hobbies:</b> Produccion de musica urbana.<br>
+                                <b>Pelicula favorita:</b> American Pie. <br>
+    
+                            </p></div>
+                    </div>
+                    
+
+                    <div >
+                        <img class="imagen" style="width: auto; height: auto; float: left; margin-left: 5rem;" 
+                        src="/CableadoEstructurado/miguelGuilca.jpg" alt="ImagenQuinesSomos1">
+                        <div style="margin-left: 18rem">
+                            <h3> Luis Miguel Guilca Pila <br></h3>
+                            <p>
+    
+                                <b>Fecha de nacimiento:</b> 26 de Octubre del 1999.<br>
+                                <b>Libro favorito:</b> "La culpa es de la vaca". <br>
+                                <b>Autor:</b> Jaime Lopera. <br>
+                                <b>Skills:</b> Cocinar,Conducir. <br>
+                                <b>Deporte favorito:</b> Voley Ball, Futbol, Box. <br>
+                                <b>Hobbies:</b> Domir, ver peliculas, subir cerros.<br>
+                                <b>Pelicula favorita:</b> Spirit, Vanhellsing. <br>
+    
+                            </p></div>
+                    </div>
+                    
+
+                    <div >
+                        <img class="imagen" style="width: auto; height: auto; float: left; margin-left: 5rem;" 
+                        src="/CableadoEstructurado/jorgeDueñas.jpg" alt="ImagenQuinesSomos1">
+                        <div style="margin-left: 18rem">
+                            <h3> Jorgue Andrés Dueñas Almeida  <br></h3>
+                            <p>
+    
+                                <b>Fecha de nacimiento:</b> 17 de Diciembre del 2002.<br>
+                                <b>Libro favorito:</b> "Viaje al centro de la tierra". <br>
+                                <b>Autor:</b> Julio Verne. <br>
+                                <b>Skills:</b> Responsabilidad, perseverancia, compromiso. <br>
+                                <b>Deporte favorito:</b> Natacion, baloncesto. <br>
+                                <b>Hobbies:</b> Tocar la bateria.<br>
+                                <b>Pelicula favorita:</b> Sully. <br>
+    
+                            </p></div>
+                    </div>
+                    
+
+                    <div >
+                        <img class="imagen" style="width: auto; height: auto; float: left; margin-left: 5rem;" 
+                        src="/CableadoEstructurado/mateoDueñas.jpg" alt="ImagenQuinesSomos1">
+                        <div style="margin-left: 18rem">
+                            <h3> Mateo José Dueñas Andrade  <br></h3>
+                            <p>
+    
+                                <b>Fecha de nacimiento:</b> 04 de Noviembre del 2002.<br>
+                                <b>Libro favorito:</b> "Maze Runner". <br>
+                                <b>Autor:</b> James Dashner. <br>
+                                <b>Skills:</b> Nadar, programar, conducir. <br>
+                                <b>Deporte favorito:</b> Futbol, vóley, natación. <br>
+                                <b>Hobbies:</b> Escuchar música, salir con amigos, practicar deporte.<br>
+                                <b>Pelicula favorita:</b> Interestelar. <br>
+    
+                            </p></div>
+                    </div>
+                     
+                    
+                    <div >
+                        <img class="imagen" style="width: auto; height: auto; float: left; margin-left: 5rem;" 
+                        src="/CableadoEstructurado/CesarSoria.jpg" alt="ImagenQuinesSomos1">
+                        <div style="margin-left: 18rem">
+                            <h3>  César Andrés Soria Varela  <br></h3>
+                            <p>
+    
+                                <b>Fecha de nacimiento:</b> 22 de Enero del 1996.<br>
+                                <b>Libro favorito:</b> "Breves Respuestas a las Grandes Preguntas". <br>
+                                <b>Autor:</b> Stephen Hawking. <br>
+                                <b>Skills:</b> Oido Musical. <br>
+                                <b>Deporte favorito:</b> Natación, gimnasia. <br>
+                                <b>Hobbies:</b> Interprete de guitarra Clásica y fingerstyle.<br>
+                                <b>Pelicula favorita:</b> Kunfu Panda. <br>
+    
+                            </p></div>
+                    </div>
+
+
+                </div>
+        </section>
+    </main>
+
+    <!-- PIE DE PAGINA  -->
+    <footer class="main-footer">
+        <!-- poara obtener © se usa Alt + 0169 -->
+        <p>Todos los derechos reservados © 2022 | MonkSaid Students</p>
+    </footer>
+    <script src="scripts/menu.js"></script>
+</body>
+
+</html>

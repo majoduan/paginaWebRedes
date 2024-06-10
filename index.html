@@ -1,0 +1,307 @@
+<!DOCTYPE html> <!--tipo de documento-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Normalizre Css .- 
+        hace que el estilo de letra sea el mismo en cualquier navegador -->
+    <link rel="stylesheet" href="https://csstools.github.io/normalize.css/11.0.0/normalize.css">
+    <!-- Estilos Personalizados .- coneccion a libreria .css-->
+    <link rel="stylesheet" href="/Styles/styles.css">
+    <!-- JAM icons -->
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto - Grupo 5</title>
+    <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0124/1351.js" async="async" ></script>
+</head>
+
+<body>
+    <!-- PARA COMENTAR Ctrl +shitf+7 -->
+
+    <!-- CABECERA -->
+    <header class="main-header">
+        <!-- Hace que el logo se mantenga siempre en la esquina el class = "main-header" -->
+        <div class="content-wrapper">
+            <!-- Divido en dos hijos, que es el Logo y el MENU...
+
+             para ingresar el logo escribo a y tabulador y continuo
+            ..........
+            href me pide el hipervinculo, es decir a donde nos lleva si presionamos en el, 
+            "/" = nos lleva al inicio 
+            -->
+
+            <!--LOGO-->
+            <a href="/">
+                <img class="mi-imagen" src="/images/EPN_logo_big.jpg" alt="Logo EPN">
+                <!--src es la fuente de donde lo voy a traer
+                "Logo Edsoft" se refiere a un texto alternativo con
+                 el cual nos vamos a referia a la imagen-->
+            </a>
+
+            <!--MENU DE NAVEGACION-->
+            <!-- linea 46 llamo al menu, 46 la identifico con id = ... y en la otra cierro -->
+            <span id="open-menu-button" class="jam jam-menu"></span>
+            <nav id="main-menu" class="main-menu">
+                <span id="close-menu-button" class="jam jam-close"></span>
+                <!--inreso una lista de elementos no orndenada-->
+                <ul>
+                    <!-- esta lista va tener  4 elementos (Incio, Quines somos...)
+
+                    Creo un elementos-->
+                    <li>
+                        <a href="/">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="/quienesSomos.html">¿Quiénes somos?</a>
+                    </li>
+                    <li>
+                        <a href="/contenido.html">Contenido</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner PRINCIPAl  -->
+
+    <main>
+
+        <!-- PRIMERA SECCION  -->
+        <section class="main-banner">
+            <div class="content-wrapper content">
+                <div class="container">
+                    <!-- Tituto -->
+                    <h1 class="title">Bienvenidos a<br> Project-One </h1>
+                    <!-- parrafo -->
+                    <p class="subtitle">Informacion sobre cableado estructurado a tu alcance, si no los comprende, ya
+                        tienes
+                        a quien acudir.
+                    </p>
+                    <!-- botonera
+                    <div>
+                        <a class="button white ghost" href="/contactos.html">Escribenos ya mismo</a>
+                        
+                    </div> -->
+                    <img class="image" src="/images/computer.svg" alt="Imagen De contacto">
+                </div>
+            </div>
+        </section>
+
+        <!-- SEGUNDA SECCION  -->
+        <section class="main-banner2 section-container">
+            <div class="content-wrapper content">
+                <div class="container">
+                    <h1 class="title" style="text-align: center">¿Qué es el Cableado estructurado?</h1>
+                    <p class="subtitle">El cableado estructurado es un
+                        sistema que organiza y distribuye cables para
+                        redes de comunicaciones y sistemas eléctricos.
+                        Utiliza un esquema estandarizado para facilitar
+                        la administración y mantenimiento, y mejorar la
+                        capacidad de expansión y escalabilidad. Elementos
+                        como patch paneles, conectores, canales y racks
+                        se utilizan para organizar los cables y
+                        garantizar su protección.</p>
+                    <div>
+                        <a class="button white" style="margin-left: 2rem;"
+                            href="/contenido1(Def,caract,topo).html">Conocer mas</a>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="image" src="/CableadoEstructurado/imgSecundaria.png"
+                        alt="imgSecundariaCableadoEstructurado">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- TERCERA SECCION -->
+        <!-- Contenido -->
+
+        <section class="section-container last-projects">
+            <h2>Contenido</h2>
+
+            <div class="content-wrapper">
+                <!-- CONTENIDO 1   -->
+                <a href="/contenido1(Def,caract,topo).html" class="project-item">
+                    <article>
+                        <div>
+                            <h4 style="margin-left: 1rem;margin-right: 1rem; text-align: center;">Definición,
+                                Caracteristicas y Topologia</h4>
+                           <!-- <p style="margin-left: 1rem;margin-right: 1rem; text-align: justify;">Da a conocer la
+                                definicion del cableado estrucuturado, junto a sus caracterisitas y topologia</p>-->
+                        </div>
+                        <div class="image-container">
+                            <img src="/CableadoEstructurado/imgContenido1.jpg" alt="Contenido1">
+                        </div>
+                    </article>
+                </a>
+
+                <!-- CONTENIDO 2   -->
+                <a href="/contenido2(Elementos).html" class="project-item">
+                    <article>
+                        <div>
+                            <h4 style="margin-left: 1rem;margin-right: 1rem; text-align: center;">Elementos</h4>
+                           <!-- <p style="margin-left: 1rem;margin-right: 1rem; text-align: justify;">Da a conocer los
+                                diferentes tipos de Elementos (Cableado horizonta, Cableado Vertical, Cuarto de
+                                cominicaciones)</p> -->
+                        </div>
+                        <div class="image-container">
+                            <img src="/CableadoEstructurado/ImgContenido2(Horizontal).jpg" alt="Contenido1">
+                        </div>
+                    </article>
+                </a>
+
+                <!-- CONTENIDO 3   -->
+                <a href="/contenido3(Canalizaciones).html" class="project-item">
+                    <article>
+                        <div>
+                            <h4 style="margin-left: 1rem;margin-right: 1rem; text-align: center;">Canalizaciones</h4>
+                            <!--<p style="margin-left: 1rem;margin-right: 1rem; text-align: justify;">Da a conocer la
+                                definicion del cableado estrucuturado, junto a sus caracterisitas y topologia</p>-->
+                        </div>
+                        <div class="image-container">
+                            <img src="/CableadoEstructurado/ImgContenido3(Canalizacion).jpg" alt="Contenido1">
+                        </div>
+                    </article>
+                </a>
+
+                <!-- CONTENIDO 4   -->
+
+                <a href="/contenido4(Cables).html" class="project-item">
+
+                    <article>
+                        <div>
+                            <h4 style="margin-left: 1rem;margin-right: 1rem; text-align: center;">
+                                Tipos de cable y velocidad según la categoría de la red </h4>
+                            <!--<p style="margin-left: 1rem;margin-right: 1rem; text-align: justify;">Da a conocer la
+                                definicion del cableado estrucuturado, junto a sus caracterisitas y topologia</p>-->
+                        </div>
+                        <div class="image-container">
+                            <img src="/CableadoEstructurado/Contenido4(Cables)" alt="Contenido4">
+                        </div>
+                    </article>
+                </a>
+
+                <!-- CONTENIDO 5   -->
+
+                <a href="/contenido5(DispositivosDeInterconexión).html" class="project-item">
+                    <article>
+                        <div>
+                            <h4 style="margin-left: 1rem;margin-right: 1rem; text-align: center;">Dispositivos de Interconexión Alámbricos e Inalámbricos</h4>
+                            <!--<p style="margin-left: 1rem;margin-right: 1rem; text-align: justify;">Da a conocer la
+                                definicion del cableado estrucuturado, junto a sus caracterisitas y topologia</p>-->
+                        </div>
+                        <div class="image-container">
+                            <img src="/CableadoEstructurado/Contenido5(Redes2).jpg" alt="Contenido1">
+                        </div>
+                    </article>
+                </a>
+
+     
+
+            <!-- CONTENIDO 6   -->
+                <a href="/contenido6(Servicios).html" class="project-item">
+                    <article>
+                        <div>
+                            <h4 style="margin-left: 1rem;margin-right: 1rem; text-align: center;">Servicios convergentes(VoIP), CCTV </h4>
+                            <!--<p style="margin-left: 1rem;margin-right: 1rem; text-align: justify;">Da a conocer la
+                                definicion del cableado estrucuturado, junto a sus caracterisitas y topologia</p>-->
+                        </div>
+                        <div class="image-container">
+                            <img  Style="width: 100% ;height: 100% ;" src="/CableadoEstructurado/imgContenido6(Voip).jpg.png" alt="Contenido1">
+                        </div>
+                    </article>
+                </a>
+
+                       <!-- CONTENIDO 7   -->
+                <a href="/contenido7(Beneficios).html" class="project-item">
+                    <article>
+                         <div>
+                            <h4 style="margin-left: 1rem;margin-right: 1rem; text-align: center;">Beneficios de Usar Cableado Estructurado</h4>
+                               <!-- <p style="margin-left: 1rem;margin-right: 1rem; text-align: justify;">Da a conocer la
+                                    definicion del cableado estrucuturado, junto a sus caracterisitas y topologia</p>-->
+                        </div>
+                        <div class="image-container">
+                            <img Style="width: 100% ;height: 100% ;"  src="/CableadoEstructurado/imgContenido7.jpg" alt="Contenido1">
+                         </div>
+                    </article>
+                </a>
+        </div>
+
+
+
+        </section>
+        <!-- seccion 4 
+        Quieres trabajar con nostros -->
+        <section class="services-section section-container">
+            <h2>Integrantes</h2>
+            <div class="content-wrapper">
+
+                <article class="service-item">
+                    <a href="quienesSomos.html" style="text-decoration: none; color: inherit;">
+                        <img src="/CableadoEstructurado/DarioRodriguez.jpg"
+                            style="border-radius: 50%; width:100px; height:100px;">
+                        <h3>Dario Rodriguez</h3>
+                        <p>Estudiante de la Escuela Politecnica Nacional</p>
+                    </a>
+
+                </article>
+
+                <article class="service-item">
+
+                    <a href="quienesSomos.html" style="text-decoration: none; color: inherit;">
+                        <img src="/CableadoEstructurado/CesarSoria.jpg"
+                            style="border-radius: 50%; width:100px; height:100px;">
+                        <h3>Cesar Soria</h3>
+                        <p>Estudiante de la Escuela Politecnica Nacional</p>
+                    </a>
+
+                </article>
+
+                <article class="service-item">
+                    <a href="quienesSomos.html" style="text-decoration: none; color: inherit;">
+                        <img src="/CableadoEstructurado/mateoDueñas.jpg"
+                            style="border-radius: 50%; width:100px; height:100px;">
+
+                        <h3>Mateo Dueñas</h3>
+                        <p>Estudiante de la Escuela Politecnica Nacional</p>
+                    </a>
+                </article>
+
+                <article class="service-item">
+
+                    <a href="quienesSomos.html" style="text-decoration: none; color: inherit;">
+                        <img src="/CableadoEstructurado/miguelGuilca.jpg"
+                            style="border-radius: 50%; width:100px; height:100px;">
+
+                        <h3>Miguel Guilca</h3>
+                        <p>Estudiante de la Escuela Politecnica Nacional</p>
+                    </a>
+                </article>
+
+                <article class="service-item">
+
+                    <a href="quienesSomos.html" style="text-decoration: none; color: inherit;">
+                        <img src="/CableadoEstructurado/jorgeDueñas.jpg"
+                            style="border-radius: 50%; width:100px; height:100px;">
+
+                        <h3>Jorge Dueñas</h3>
+                        <p>Estudiante de la Escuela Politecnica Nacional</p>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- PIE DE PAGINA  -->
+        <footer class="main-footer">
+            <p>Todos los derechos reservados © 2022 | MonkSaid Students</p>
+        </footer>
+
+        <script src="/scripts/menu.js"></script>
+</body>
+
+</html>

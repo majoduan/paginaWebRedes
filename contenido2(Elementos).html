@@ -1,0 +1,139 @@
+<!DOCTYPE html> <!--tipo de documento-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Normalizre Css .- 
+            hace que el estilo de letra sea el mismo en cualquier navegador -->
+    <link rel="stylesheet" href="https://csstools.github.io/normalize.css/11.0.0/normalize.css">
+    <!-- Estilos Personalizados .- coneccion a libreria .css-->
+    <link rel="stylesheet" href="/Styles/styles.css">
+    <!-- JAM icons -->
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto - Grupo 5</title>
+</head>
+
+<body>
+    <!-- PARA COMENTAR Ctrl +shitf+7 -->
+
+    <!-- CABECERA -->
+    <header class="main-header">
+        <!-- Hace que el logo se mantenga siempre en la esquina el class = "main-header" -->
+        <div class="content-wrapper">
+            <!-- Divido en dos hijos, que es el Logo y el MENU...
+             para ingresar el logo escribo a y tabulador y continuo
+            ..........
+            href me pide el hipervinculo, es decir a donde nos lleva si presionamos en el, 
+            "/" = nos lleva al inicio 
+            -->
+
+            <!--LOGO-->
+            <a href="/">
+                <img class="mi-imagen" src="/images/EPN_logo_big.jpg" alt="Logo EPN">
+                <!--src es la fuente de donde lo voy a traer
+                "Logo Edsoft" se refiere a un texto alternativo con
+                 el cual nos vamos a referia a la imagen-->
+            </a>
+
+            <!--MENU DE NAVEGACION-->
+            <!-- linea 46 llamo al menu, 46 la identifico con id = ... y en la otra cierro -->
+            <span id="open-menu-button" class="jam jam-menu"></span>
+            <nav id="main-menu" class="main-menu">
+                <span id="close-menu-button" class="jam jam-close"></span>
+                <!--inreso una lista de elementos no orndenada-->
+                <ul>
+                    <!-- esta lista va tener  4 elementos (Incio, Quines somos...)
+                    Creo un elementos-->
+                    <li>
+                        <a href="/">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="/quienesSomos.html">¿Quiénes somos?</a>
+                    </li>
+                    <li>
+                        <a href="/contenido.html">contenido</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about-project section-container">
+        <h1 class="title" style="margin-bottom: 4rem;">Elementos del Cableado <br> Estructurado</h1>
+        
+        <div class="content-wrapper">
+            <div>
+                <img class="imagen" style="width: 50%; height: 20%;" src="/CableadoEstructurado/imgContenido2.jpg"
+                    alt="img.pr1">
+                <p>
+                    El cableado estructurado cuenta con algunos componentes que son fundamentales para su
+                    implementación, en este caso, hablamos del cableado horizontal, el cableado vertical (backbone) y
+                    los cuartos de comunicaciones.<br>
+                    <br>
+                </p>
+
+                <h2>Cableado horizontal</h2>
+                <p>
+                    Se refiere al cableado o sistema de distribución que corre horizontalmente entre el techo y el
+                    suelo, de ahí su nombre. Se compone de dos elementos básicos: Cable Horizontal y Hardware de
+                    Conexión que proporcionan los medios básicos para transportar señales de telecomunicaciones entre el
+                    área de trabajo y el cuarto de telecomunicaciones, y rutas y espacios horizontales que se encargan
+                    de distribuir y soportar el cableado horizontal, y conectar el hardware entre la salida del área de
+                    trabajo y el cuarto de telecomunicaciones según se define en la norma EIA/TIA 56 (set de estándares
+                    desarrollado por la Telecommunications Industry Association). Este cableado contiene el mayor número
+                    de cables individuales de toda la instalación.
+                </p>
+                <div style="text-align: center;">
+                    <img src="/CableadoEstructurado/ImgContenido2(Horizontal).jpg" alt="CableadoHorizontal">
+                </div>
+
+                <h2>Cableado Vertical</h2>
+                            <p>El cableado vertical también conocido como backbone o cableado troncal, proporciona las
+                                interconexiones entre cuartos de entrada de servicios de edificio, cuartos de equipo y
+                                cuartos de telecomunicaciones. Este cableado es el encargado de realizar la conexión
+                                vertical entre los diferentes pisos de un edificio, estableciendo los medios de
+                                transmisión, puntos principales e intermedios de conexión cruzada y terminaciones
+                                mecánicas necesarias. El backbone de datos se puede implementar con cables UTP o con
+                                fibra óptica. En el caso de decidir utilizar UTP, el mismo será de categoría 5 y se
+                                dispondrá un número de cables desde cada gabinete al gabinete seleccionado como centro
+                                de estrella. La norma EIA/TIA 568 prevé la necesidad de ubicar la transmisión de
+                                cableado vertical a horizontal, en habitaciones independientes, llamadas armarios de
+                                telecomunicaciones, al menos una por piso.
+                            </p>
+                            <div style="text-align: center;">
+                                <img src="/CableadoEstructurado/ImgContenido2(Vertical).jpg" alt="CableadoVertical">
+                            </div>
+         
+                <h2>Cuarto de Comunicaciones</h2>
+                            <p>
+                                Se conoce así a la sala en la que se alojan y centralizan todos los elementos que componen 
+                                el sistema de telecomunicaciones: los cables, accesorios de conexión, dispositivos 
+                                de protección, entre otros, y demás equipos necesarios para conectar el edificio a los 
+                                servicios externos. Estos cuartos se deben diseñar de acuerdo a la norma EIA/TIA-569 que 
+                                contempla protección eléctrica establecida por códigos eléctricos aplicables.
+                                
+                            <div style="text-align: center;">
+                                <img  style="width: 45%;margin-top: 2rem;" src="/CableadoEstructurado/ImgContenido2(Cominicaciones).jpg" alt="CuantoComunicaciones">
+                            </div>
+         
+
+            </div>
+        </div>
+    </section>
+    </main>
+    <!-- PIE DE PAGINA  -->
+    <footer class="main-footer">
+        <!-- poara obtener © se usa Alt + 0169 -->
+        <p>Todos los derechos reservados © 2022 | MonkSaid Students</p>
+    </footer>
+
+    <script src="scripts/menu.js"></script>
+</body>
+
+</html>

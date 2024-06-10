@@ -1,0 +1,195 @@
+<!DOCTYPE html> <!--tipo de documento-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Normalizre Css .- 
+            hace que el estilo de letra sea el mismo en cualquier navegador -->
+    <link rel="stylesheet" href="https://csstools.github.io/normalize.css/11.0.0/normalize.css">
+    <!-- Estilos Personalizados .- coneccion a libreria .css-->
+    <link rel="stylesheet" href="/Styles/styles.css">
+    <!-- JAM icons -->
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto - Grupo 5</title>
+</head>
+
+<body>
+    <!-- PARA COMENTAR Ctrl +shitf+7 -->
+
+    <!-- CABECERA -->
+    <header class="main-header">
+        <!-- Hace que el logo se mantenga siempre en la esquina el class = "main-header" -->
+        <div class="content-wrapper">
+            <!-- Divido en dos hijos, que es el Logo y el MENU...
+
+             para ingresar el logo escribo a y tabulador y continuo
+            ..........
+            href me pide el hipervinculo, es decir a donde nos lleva si presionamos en el, 
+            "/" = nos lleva al inicio 
+            -->
+
+            <!--LOGO-->
+            <a href="/">
+                <img class="mi-imagen" src="/images/EPN_logo_big.jpg" alt="Logo EPN">
+                <!--src es la fuente de donde lo voy a traer
+                "Logo Edsoft" se refiere a un texto alternativo con
+                 el cual nos vamos a referia a la imagen-->
+            </a>
+
+            <!--MENU DE NAVEGACION-->
+            <!-- linea 46 llamo al menu, 46 la identifico con id = ... y en la otra cierro -->
+            <span id="open-menu-button" class="jam jam-menu"></span>
+            <nav id="main-menu" class="main-menu">
+                <span id="close-menu-button" class="jam jam-close"></span>
+                <!--inreso una lista de elementos no orndenada-->
+                <ul>
+                    <!-- esta lista va tener  4 elementos (Incio, Quines somos...)
+
+                    Creo un elementos-->
+                    <li>
+                        <a href="/">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="/quienesSomos.html">¿Quiénes somos?</a>
+                    </li>
+                    <li>
+                        <a href="/contenido.html">Contenido</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+        <section class="about-project section-container">
+            <h1 class="title">Tipos de cable (UTP y Fibra óptica) y velocidad según la categoría de la red </h1>
+            <div class="content-wrapper">
+                <div>
+                    <img class="imagen" src="/CableadoEstructurado/Contenido4(Cables)" alt="img.pr1">
+    
+                    <p>Existen dos tipos principales de cables: los cables UTP (par trenzado
+                         no apantallado) y los cables de fibra óptica. Ambas opciones tienen
+                          sus propias ventajas y desventajas, y se utilizan en diferentes 
+                          aplicaciones y entornos.
+
+                        Los cables UTP son los más comunes en las redes de área local (LAN) 
+                        y son utilizados para transmitir señales de voz, datos y video. Estos 
+                        cables están compuestos por varios pares de hilos de cobre trenzados 
+                        juntos, y se clasifican según su categoría, desde la categoría 3 hasta
+                         la categoría 6A, cada una con una velocidad máxima de transmisión diferente.
+                        
+                        Por otro lado, los cables de fibra óptica son utilizados para transmitir
+                         señales de luz a través de un núcleo de vidrio o plástico. Estos cables
+                          son ideales para aplicaciones de alta velocidad y larga distancia, y se
+                           utilizan comúnmente en redes de área amplia (WAN) y en entornos con altas
+                            demandas de seguridad. Los cables de fibra óptica también se clasifican 
+                            según su categoría, desde la OM1 hasta la OM5, con velocidades máximas 
+                            de transmisión diferentes. A continuacion te mostraremos una tabla compartiva.</p>
+    
+                    </p>
+
+                    <table clas border="1">
+                            <tr>
+                              <th>Característica</th>
+                              <th>UTP Cat5e</th>
+                              <th>UTP Cat6</th>
+                              <th>UTP Cat6a</th>
+                              <th>Fibra Óptica OM1</th>
+                              <th>Fibra Óptica OM3</th>
+                              <th>Fibra Óptica OM4</th>
+                            </tr>
+                            <tr>
+                              <td>Velocidad máxima de transmisión</td>
+                              <td>1 Gbps</td>
+                              <td>10 Gbps</td>
+                              <td>10 Gbps</td>
+                              <td>1 Gbps</td>
+                              <td>10 Gbps</td>
+                              <td>40 Gbps</td>
+                            </tr>
+                            <tr>
+                              <td>Distancia máxima de transmisión</td>
+                              <td>100 m</td>
+                              <td>100 m</td>
+                              <td>100 m</td>
+                              <td>2 km</td>
+                              <td>300 m</td>
+                              <td>400 m</td>
+                            </tr>
+                            <tr>
+                              <td>Estructura</td>
+                              <td>Par trenzado</td>
+                              <td>Par trenzado</td>
+                              <td>Par trenzado</td>
+                              <td>Núcleo de vidrio o plástico</td>
+                              <td>Núcleo de vidrio o plástico</td>
+                              <td>Núcleo de vidrio o plástico</td>
+                            </tr>
+                            <tr>
+                              <td>Impermeable</td>
+                              <td>No</td>
+                              <td>No</td>
+                              <td>No</td>
+                              <td>Sí</td>
+                              <td>Sí</td>
+                              <td>Sí</td>
+                            </tr>
+                            <tr>
+                              <td>Resistente a la interferencia EMI</td>
+                              <td>No</td>
+                              <td>Sí</td>
+                              <td>Sí</td>
+                              <td>Sí</td>
+                              <td>Sí</td>
+                              <td>Sí</td>
+                            </tr>
+                            <tr>
+                              <td>Utilizado para aplicaciones de alta velocidad</td>
+                              <td>No</td>
+                              <td>Sí</td>
+                              <td>Sí</td>
+                              <td>Sí</td>
+                              <td>Sí</td>
+                              <td>Sí</td>
+                            </tr>
+                          </table>
+             
+                    <div class="content-wrapper">
+    
+                        <article class="about-items2">
+    
+    
+                            <div>
+                                <h2><br></h2>
+                                <p>
+                                    La tabla muestra las características de los diferentes tipos de cables utilizados en el cableado estructurado. Se puede observar que los cables UTP Cat5e, Cat6 y Cat6a son los más utilizados en las redes de computadoras debido a su velocidad de transmisión y distancia de transmisión. Sin embargo, estos cables no son resistentes a la interferencia EMI ni son impermeables.
+
+                                    Por otro lado, los cables de fibra óptica OM1, OM3 y OM4 son ideales para aplicaciones de alta velocidad debido a su velocidad de transmisión y resistencia a la interferencia EMI. Sin embargo, su distancia de transmisión es menor que la de los cables UTP.
+                                    
+                                    En resumen, la elección del tipo de cable dependerá del uso que se le vaya a dar a la red y las necesidades específicas de cada proyecto.
+                                </p>
+                            </div>
+                        </article>
+             
+              
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    </main>
+    <!-- PIE DE PAGINA  -->
+    <footer class="main-footer">
+        <!-- poara obtener © se usa Alt + 0169 -->
+        <p>Todos los derechos reservados © 2022 | MonkSaid Students</p>
+    </footer>
+
+    <script src="scripts/menu.js"></script>
+</body>
+
+</html>

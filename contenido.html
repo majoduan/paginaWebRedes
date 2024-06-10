@@ -1,0 +1,191 @@
+<!DOCTYPE html> <!--tipo de documento-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Normalizre Css .- 
+            hace que el estilo de letra sea el mismo en cualquier navegador -->
+    <link rel="stylesheet" href="https://csstools.github.io/normalize.css/11.0.0/normalize.css">
+    <!-- Estilos Personalizados .- coneccion a libreria .css-->
+    <link rel="stylesheet" href="/Styles/styles.css">
+    <!-- JAM icons -->
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto - Grupo 5</title>
+</head>
+
+<body>
+    <!-- PARA COMENTAR Ctrl +shitf+7 -->
+
+    <!-- CABECERA -->
+    <header class="main-header">
+        <!-- Hace que el logo se mantenga siempre en la esquina el class = "main-header" -->
+        <div class="content-wrapper">
+            <!-- Divido en dos hijos, que es el Logo y el MENU...
+
+             para ingresar el logo escribo a y tabulador y continuo
+            ..........
+            href me pide el hipervinculo, es decir a donde nos lleva si presionamos en el, 
+            "/" = nos lleva al inicio 
+            -->
+
+            <!--LOGO-->
+            <a href="/">
+                <img class="mi-imagen" src="/images/EPN_logo_big.jpg" alt="Logo EPN">
+                <!--src es la fuente de donde lo voy a traer
+                "Logo Edsoft" se refiere a un texto alternativo con
+                 el cual nos vamos a referia a la imagen-->
+            </a>
+
+            <!--MENU DE NAVEGACION-->
+            <!-- linea 46 llamo al menu, 46 la identifico con id = ... y en la otra cierro -->
+            <span id="open-menu-button" class="jam jam-menu"></span>
+            <nav id="main-menu" class="main-menu">
+                <span id="close-menu-button" class="jam jam-close"></span>
+                <!--inreso una lista de elementos no orndenada-->
+                <ul>
+                    <!-- esta lista va tener  4 elementos (Incio, Quines somos...)
+
+                    Creo un elementos-->
+                    <li>
+                        <a href="/">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="/quienesSomos.html">¿Quiénes somos?</a>
+                    </li>
+                    <li>
+                        <a href="/contenido.html">Contenido</a>
+                    </li>
+               
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="projects-section section-conteiner">
+            <h1 class="title">Contenido</h1>
+            <div class="content-wrapper">
+                <!-- CONTENIDO 1   -->
+                <a href="/contenido1(Def,caract,topo).html" class="project-item">
+                    <article>
+                        <div>
+                            <h4 style="margin-left: 1rem;margin-right: 1rem; text-align: center;">Definicion,
+                                Caracteristicas y Topologia</h4>
+                           <!-- <p style="margin-left: 1rem;margin-right: 1rem; text-align: justify;">Da a conocer la
+                                definicion del cableado estrucuturado, junto a sus caracterisitas y topologia</p>-->
+                        </div>
+                        <div class="image-container">
+                            <img src="/CableadoEstructurado/imgContenido1.jpg" alt="Contenido1">
+                        </div>
+                    </article>
+                </a>
+
+                <!-- CONTENIDO 2   -->
+                <a href="/contenido2(Elementos).html" class="project-item">
+                    <article>
+                        <div>
+                            <h4 style="margin-left: 1rem;margin-right: 1rem; text-align: center;">Elementos</h4>
+                           <!-- <p style="margin-left: 1rem;margin-right: 1rem; text-align: justify;">Da a conocer los
+                                diferentes tipos de Elementos (Cableado horizonta, Cableado Vertical, Cuarto de
+                                cominicaciones)</p> -->
+                        </div>
+                        <div class="image-container">
+                            <img src="/CableadoEstructurado/ImgContenido2(Horizontal).jpg" alt="Contenido1">
+                        </div>
+                    </article>
+                </a>
+
+                <!-- CONTENIDO 3   -->
+                <a href="/contenido3(Canalizaciones).html" class="project-item">
+                    <article>
+                        <div>
+                            <h4 style="margin-left: 1rem;margin-right: 1rem; text-align: center;">Canalizaciones</h4>
+                            <!--<p style="margin-left: 1rem;margin-right: 1rem; text-align: justify;">Da a conocer la
+                                definicion del cableado estrucuturado, junto a sus caracterisitas y topologia</p>-->
+                        </div>
+                        <div class="image-container">
+                            <img src="/CableadoEstructurado/ImgContenido3(Canalizacion).jpg" alt="Contenido1">
+                        </div>
+                    </article>
+                </a>
+
+                <!-- CONTENIDO 4   -->
+
+                <a href="/contenido4(Cables).html" class="project-item">
+
+                    <article>
+                        <div>
+                            <h4 style="margin-left: 1rem;margin-right: 1rem; text-align: center;">
+                                Tipos de cable y velocidad según la categoría de la red </h4>
+                            <!--<p style="margin-left: 1rem;margin-right: 1rem; text-align: justify;">Da a conocer la
+                                definicion del cableado estrucuturado, junto a sus caracterisitas y topologia</p>-->
+                        </div>
+                        <div class="image-container">
+                            <img src="/CableadoEstructurado/Contenido4(Cables)" alt="Contenido4">
+                        </div>
+                    </article>
+                </a>
+
+                <!-- CONTENIDO 5   -->
+
+                <a href="/contenido5(DispositivosDeInterconexión).html" class="project-item">
+                    <article>
+                        <div>
+                            <h4 style="margin-left: 1rem;margin-right: 1rem; text-align: center;">Dispositivos de Interconexión Alámbricos e Inalámbricos</h4>
+                            <!--<p style="margin-left: 1rem;margin-right: 1rem; text-align: justify;">Da a conocer la
+                                definicion del cableado estrucuturado, junto a sus caracterisitas y topologia</p>-->
+                        </div>
+                        <div class="image-container">
+                            <img src="/CableadoEstructurado/Contenido5(Redes2).jpg" alt="Contenido1">
+                        </div>
+                    </article>
+                </a>
+
+     
+
+            <!-- CONTENIDO 6   -->
+                <a href="/contenido6(Servicios).html" class="project-item">
+                    <article>
+                        <div>
+                            <h4 style="margin-left: 1rem;margin-right: 1rem; text-align: center;">Servicios convergentes(VoIP), CCTV </h4>
+                            <!--<p style="margin-left: 1rem;margin-right: 1rem; text-align: justify;">Da a conocer la
+                                definicion del cableado estrucuturado, junto a sus caracterisitas y topologia</p>-->
+                        </div>
+                        <div class="image-container">
+                            <img  Style="width: 100% ;height: 100% ;" src="/CableadoEstructurado/imgContenido6(Voip).jpg.png" alt="Contenido1">
+                        </div>
+                    </article>
+                </a>
+
+                       <!-- CONTENIDO 7   -->
+                <a href="/contenido7(Beneficios).html" class="project-item">
+                    <article>
+                         <div>
+                            <h4 style="margin-left: 1rem;margin-right: 1rem; text-align: center;">Beneficios de Usar Cableado Estructurado</h4>
+                               <!-- <p style="margin-left: 1rem;margin-right: 1rem; text-align: justify;">Da a conocer la
+                                    definicion del cableado estrucuturado, junto a sus caracterisitas y topologia</p>-->
+                        </div>
+                        <div class="image-container">
+                            <img Style="width: 100% ;height: 100% ;"  src="/CableadoEstructurado/imgContenido7.jpg" alt="Contenido1">
+                         </div>
+                    </article>
+                </a>
+        </div>
+
+        </section>
+    </main>
+    <!-- PIE DE PAGINA  -->
+    <footer class="main-footer">
+        <!-- poara obtener © se usa Alt + 0169 -->
+        <p>Todos los derechos reservados © 2022 | MonkSaid Students</p>
+    </footer>
+
+    <script src="scripts/menu.js"></script>
+</body>
+
+</html>
